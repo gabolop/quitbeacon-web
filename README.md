@@ -25,7 +25,8 @@ Before launch, configure the support mailbox used by the site and replace `quitb
 ## Content checklist before public launch
 
 - [ ] Confirm the domain and configure HTTPS.
-- [ ] Configure and test `support@quitbeacon.app`.
+- [ ] Configure and test `support@quitbeacon.app` (or replace it with the final support address).
+- [ ] Replace the placeholder support contact with the legal operator's real name and contact address.
 - [ ] If a launch list is added, use a privacy-reviewed signup provider; the current site only opens an email draft.
 - [ ] Confirm the privacy policy with the final app data behavior.
 - [ ] Add the Google Play listing URL after release.
