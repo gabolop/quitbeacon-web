@@ -60,6 +60,17 @@ def validate_html(filename: str) -> None:
         fail(f"{filename} is missing a viewport meta tag")
     if not any(tag == "link" and attrs.get("href") == "/styles.css" for tag, attrs in tags):
         fail(f"{filename} is missing the shared stylesheet")
+    if filename in {"index.html", "privacy.html", "support.html"}:
+        if not any(
+            tag == "select" and attrs.get("id") == "language-select"
+            for tag, attrs in tags
+        ):
+            fail(f"{filename} is missing the language selector")
+        if not any(
+            tag == "script" and attrs.get("src") == "/script.js"
+            for tag, attrs in tags
+        ):
+            fail(f"{filename} is missing the localization script")
 
     for tag, attrs in tags:
         target = attrs.get("href", "") if tag == "a" else attrs.get("src", "")
