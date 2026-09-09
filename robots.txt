@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://quitbeacon.app/sitemap.xml
