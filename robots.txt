@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://quitbeacon.app/sitemap.xml
+Sitemap: https://quitbeacon-web.pages.dev/sitemap.xml
